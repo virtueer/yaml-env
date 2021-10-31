@@ -1,5 +1,5 @@
 {
-  "name": "yaml-env-load-load",
+  "name": "yaml-env-load",
   "description": "Loads environment variables from yaml file",
   "version": "1.0.1",
   "main": "index.js",
