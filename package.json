@@ -1,0 +1,27 @@
+{
+  "name": "yaml-env",
+  "description": "Loads environment variables from yaml file",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "erdemefe07",
+  "license": "MIT",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/erdemefe07/yaml-env.git"
+  },
+  "keywords": [
+    "yaml-env",
+    "env",
+    ".env",
+    ".env.yaml",
+    "environment",
+    "variables",
+    "config",
+    "process.env"
+  ],
+  "dependencies": {
+    "debug": "^4.3.2",
+    "js-yaml": "^4.1.0"
+  }
+}
