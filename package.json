@@ -1,7 +1,7 @@
 {
-  "name": "yaml-env",
+  "name": "yaml-env-load-load",
   "description": "Loads environment variables from yaml file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "erdemefe07",
   "license": "MIT",
@@ -11,6 +11,7 @@
     "url": "git://github.com/erdemefe07/yaml-env.git"
   },
   "keywords": [
+    "yaml-env-load",
     "yaml-env",
     "env",
     ".env",
