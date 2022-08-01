@@ -6,15 +6,14 @@ const debug = require('debug')('yaml-env-load');
 module.exports = (envPath = '.env') => {
   try {
     const env = yaml.load(fs.readFileSync(envPath, 'utf8'));
-    for (const key in env) {
-      if (Object.hasOwnProperty.call(env, key)) {
-        const element = env[key];
-
-        Object.defineProperty(process.env, key, {
-          get() { return element; },
-        });
-      }
+    const envs = {
+      ...process.env,
+      ...env
     }
+
+    Object.defineProperty(process, 'env', {
+      value: envs
+    })
   } catch (error) {
     if (error.message.includes('no such file or directory'))
       debug(`Environment file ('${path.resolve(envPath)}') not found.`);
